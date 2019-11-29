@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src = 'array.js'></script>
+<script src = 'myfunc.js'></script>
+<script src = 'urlparse.js'></script>
+</head>
+<body>
+<h1>We are on main page</h1>
+
+<button id = 'button' onclick="myFunction()">make reuqest to test2 page</button>
+<br>
+<div id = 'mydiv'>
+	<p id = 'resp'></p>
+</div>
+<br><hr><br>
+<p> Input url: <p> <input type="text" id="urlname" style = "width: auto "><br>
+  <br><button id="parse" onclick="parser()">Parse</button>
+</form>
+<section id ="results" style = "display: none">
+  <ul>
+  <li>Is URL correct? <span id ="boolresult" style = "color : tomato"></span> </li>
+  <li>Protocol: <span id="protocolres" style = "color : tomato"></span></li>
+  <li>Login: <span id="login" style = "color : tomato"></span></li>
+  <li>Password: <span id="password" style = "color : tomato"></span></li>
+  <li>Host: <span id="host" style = "color : tomato"></span></li>
+  <li>Port: <span id="port" style = "color : tomato"></span></li>
+  <li>Way: <span id="way" style = "color : tomato"></span></li>
+  <li>Parameters: <span id="parameters" style = "color : tomato"></span></li>
+  <li>Anchor: <span id="anchor" style = "color : tomato"></span></li>
+
+ </ul>
+ </section> 
+ <h5 id="negres" style = "display: none">Incorrect URL</h5>
+</body>
+</html>
